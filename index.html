@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e9e9e4">
+  <title>Before · 9:16 手机预览</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body { display: grid; place-items: center; background: #e9e9e4; }
+    .phone {
+      width: min(100vw, 56.25vh, 405px);
+      width: min(100vw, 56.25dvh, 405px);
+      aspect-ratio: 9 / 16;
+      overflow: hidden;
+      background: #f7f6ef;
+      box-shadow: 0 12px 48px #18243d24;
+    }
+    iframe { display: block; width: 100%; height: 100%; border: 0; }
+    @media(max-width:480px){.phone{width:100vw;height:100dvh;aspect-ratio:auto;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <main class="phone" aria-label="9比16竖版手机预览">
+    <iframe src="app.html" title="Before 手机应用" allow="fullscreen"></iframe>
+  </main>
+</body>
+</html>
